@@ -1,6 +1,6 @@
-# nashata-vinitsa — website of „Нашата Виница“
+# vinishko-utro — website of „Винишко Утро“
 
-Public GitHub Pages site: https://ivip40.github.io/nashata-vinitsa/
+Public GitHub Pages site: https://ivip40.github.io/vinishko-utro/
 
 Contents: `index.html` (issue list, contacts, legal owner line), `logo.svg`, `issues/YYYY-MM-broi-NN.pdf`.
 
