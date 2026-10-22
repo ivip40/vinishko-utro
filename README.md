@@ -2,7 +2,7 @@
 
 Public GitHub Pages site: https://ivip40.github.io/vinishko-utro/
 
-Contents: `index.html` (issue list with what is inside, contacts: e-mail + Facebook, advertising), `telefoni.html` (useful phones from the latest issue), `site.css` (shared styles, menu), `qr-facebook.svg` (copy of `assets/qr-facebook.svg` from the private repo), `logo.svg`, `issues/YYYY-MM-broi-NN.pdf`.
+Contents: `index.html` (issue list with what is inside, contacts: e-mail + Facebook, advertising), `telefoni.html` (useful phones from the latest issue), `site.css` (shared styles, menu), `logo.svg`, `issues/YYYY-MM-broi-NN.pdf`.
 
 Do not edit here by hand except the texts in `index.html`. New issues are published from the private working repo `ivip40/vinitsa-vestnik` with:
 

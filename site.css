@@ -37,8 +37,4 @@ nav .fb{margin-left:auto;display:inline-flex;align-items:center;gap:6px;border:n
 .fbicon{width:20px;height:20px;flex:none;vertical-align:-4px}
 .contact a .fbicon{width:18px;height:18px;margin-right:6px}
 .contact a{display:inline-flex;align-items:center}
-.reach{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.reach .contact{flex:1 1 260px;margin:0}
-.qrbox{margin:0;text-align:center;font:13px "Roboto Condensed",sans-serif;color:var(--muted)}
-.qrbox img{display:block;width:120px;height:120px;padding:8px;background:#fff;border:1px solid var(--rule);border-radius:6px;margin:0 auto 4px}
 .issue .acts{display:flex;gap:8px}
