@@ -6,44 +6,12 @@
 <title>Винишко Утро — вестникът на квартала</title>
 <meta name="description" content="Безплатен месечен вестник за кв. Виница, Варна. Всички броеве в PDF.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#141414;--accent:#7a1f2b;--muted:#5a5a5a;--paper:#fff;--tint:#f7f3ec;--rule:#ddd}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eee;--accent:#e08a97;--muted:#aaa;--paper:#161616;--tint:#222;--rule:#333}}
-:root[data-theme="dark"]{--ink:#eee;--accent:#e08a97;--muted:#aaa;--paper:#161616;--tint:#222;--rule:#333}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.5 "PT Serif",Georgia,serif}
-main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
-header{display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--accent);padding-bottom:12px;margin-bottom:8px}
-header img{width:44px;height:44px}
-h1{font:900 34px/1 "Playfair Display",serif;color:var(--accent);margin:0}
-.sub{font:14px "Roboto Condensed",sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 28px}
-h2{font:700 20px "Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.5px;margin:28px 0 10px}
-.issue{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--tint);padding:14px 16px;border-left:4px solid var(--accent);margin-bottom:10px;flex-wrap:wrap}
-.issue b{font-family:"Roboto Condensed",sans-serif;font-size:18px}
-.issue a{font:700 15px "Roboto Condensed",sans-serif;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);padding:6px 12px;border-radius:4px}
-.issue a:hover{background:var(--accent);color:#fff}
-.note{font-size:14px;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px;margin-top:32px}
-p{margin:0 0 10px}
-.issue small{color:var(--muted);font-size:14px}
-.inside{margin:-4px 0 18px;padding:0 0 0 20px;font-size:15px;color:var(--muted)}
-.inside li{margin:2px 0}
-dl.phones{margin:0;display:grid;grid-template-columns:1fr auto;gap:0 16px;font-size:16px}
-dl.phones dt,dl.phones dd{margin:0;padding:7px 0;border-bottom:1px solid var(--rule)}
-dl.phones dd{text-align:right;white-space:nowrap}
-dl.phones dt small{display:block;color:var(--muted);font-size:13px}
-dl.phones dt small a[href^="tel:"]{font-size:14px}
-a{color:var(--accent)}
-a[href^="tel:"]{font:700 17px "Roboto Condensed",sans-serif;text-decoration:none}
-.contact{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 12px}
-.contact a{font:700 16px "Roboto Condensed",sans-serif;text-decoration:none;color:#fff;background:var(--accent);padding:9px 14px;border-radius:4px}
-:root[data-theme="dark"] .contact a{color:#161616}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact a{color:#161616}}
-.small{font-size:14px;color:var(--muted)}
-
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 <main>
 <header><img src="logo.svg" alt=""><h1>Винишко Утро</h1></header>
+<nav><a href="./" aria-current="page">Броеве</a><a href="telefoni.html">Полезни телефони</a><a class="fb" href="https://www.facebook.com/vinishkoutro" target="_blank" rel="noopener"><svg class="fbicon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M15.12 7.32H16.8V4.4a22 22 0 0 0-2.45-.13c-2.43 0-4.09 1.48-4.09 4.2v2.34H7.52v3.18h2.74V24h3.29v-9.99h2.73l.41-3.18h-3.14V8.8c0-.92.25-1.48 1.57-1.48z"/></svg>Facebook</a></nav>
 <p class="sub">Безплатен месечен вестник за кв. Виница · Варна</p>
 
 <p>Пишем за това, което общината решава за нашите улици, за строежите, училището и градината, за хората и историята на Виница — проверено и с телефони, на които можете да се обадите. Без партии; рекламите са означени.</p>
@@ -58,25 +26,9 @@ a[href^="tel:"]{font:700 17px "Roboto Condensed",sans-serif;text-decoration:none
 <li>Автобусите до града, полезни телефони, календар за ноември–декември</li>
 </ul>
 
-<h2>Полезни телефони</h2>
-<dl class="phones">
-<dt>Спешни случаи</dt><dd><a href="tel:112">112</a></dd>
-<dt>Община Варна — сигнали<small>signal.varna.bg</small></dt><dd><a href="tel:052820800">052/820 800</a></dd>
-<dt>Район „Приморски“<small>бул. „Ген. Колев“ 92; кмет Николай Желязков, приемен ден сряда, 10–12 ч.</small></dt><dd><a href="tel:052359100">052/359 100</a></dd>
-<dt>Общински офис Виница (АТО)<small>ул. „Цар Борис III“ 35Б</small></dt><dd><a href="tel:052341971">052/341 971</a></dd>
-<dt>ВиК-Варна — аварии (24 ч.)</dt><dd><a href="tel:080019160">0800 19160</a></dd>
-<dt>Енерго-Про — без ток (24 ч.)</dt><dd><a href="tel:070016161">0700 161 61</a></dd>
-<dt>Градски транспорт<small>автобусите на живо: varnatraffic.com</small></dt><dd><a href="tel:070010933">0700 10933</a></dd>
-<dt>Пето РУ — полиция<small>приемни във Виница 15:30–17:00: запад <a href="tel:052553554">052/553 554</a> (вт, чт), изток <a href="tel:052553567">052/553 567</a> (ср, пт)</small></dt><dd><a href="tel:052355311">052/355 311</a></dd>
-<dt>ОУ „Панайот Волов“</dt><dd><a href="tel:052469989">052/469 989</a></dd>
-<dt>ДГ №23 „Иглика“</dt><dd><a href="tel:052342301">052/342 301</a></dd>
-<dt>Поща 9022<small>ул. „Черно море“ 1 · пон–пет 8:00–16:00</small></dt><dd><a href="tel:052343088">052/343 088</a></dd>
-</dl>
-<p class="small">Телефоните са от брой 1 (ноември 2026). Ако някой е сменен, пишете ни.</p>
-
 <h2>Пишете ни</h2>
 <p>Сигнали, безплатни малки обяви (до 150 знака), събития за календара, стари снимки на Виница — до 20-о число на месеца:</p>
-<div class="contact"><a href="mailto:vinishkoutro@gmail.com">vinishkoutro@gmail.com</a><a href="https://www.facebook.com/vinishkoutro">Facebook: Винишко Утро</a></div>
+<div class="contact"><a href="mailto:vinishkoutro@gmail.com">vinishkoutro@gmail.com</a><a href="https://www.facebook.com/vinishkoutro" target="_blank" rel="noopener"><svg class="fbicon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M15.12 7.32H16.8V4.4a22 22 0 0 0-2.45-.13c-2.43 0-4.09 1.48-4.09 4.2v2.34H7.52v3.18h2.74V24h3.29v-9.99h2.73l.41-3.18h-3.14V8.8c0-.92.25-1.48 1.57-1.48z"/></svg>Facebook: Винишко Утро</a></div>
 
 <h2>Реклама във вестника</h2>
 <p>2 000 броя всеки месец в 20 точки в квартала — магазини, аптеки, кафенета, читалището и училището. Цени от €10 (ред в указателя „Майстори и услуги“) до €140 (половин страница). Пишете ни на <a href="mailto:vinishkoutro@gmail.com">vinishkoutro@gmail.com</a>.</p>

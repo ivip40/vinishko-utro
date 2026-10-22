@@ -1,0 +1,39 @@
+:root{--ink:#141414;--accent:#7a1f2b;--muted:#5a5a5a;--paper:#fff;--tint:#f7f3ec;--rule:#ddd}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eee;--accent:#e08a97;--muted:#aaa;--paper:#161616;--tint:#222;--rule:#333}}
+:root[data-theme="dark"]{--ink:#eee;--accent:#e08a97;--muted:#aaa;--paper:#161616;--tint:#222;--rule:#333}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.5 "PT Serif",Georgia,serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
+header{display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--accent);padding-bottom:12px;margin-bottom:8px}
+header img{width:44px;height:44px}
+h1{font:900 34px/1 "Playfair Display",serif;color:var(--accent);margin:0}
+.sub{font:14px "Roboto Condensed",sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 28px}
+h2{font:700 20px "Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.5px;margin:28px 0 10px}
+.issue{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--tint);padding:14px 16px;border-left:4px solid var(--accent);margin-bottom:10px;flex-wrap:wrap}
+.issue b{font-family:"Roboto Condensed",sans-serif;font-size:18px}
+.issue a{font:700 15px "Roboto Condensed",sans-serif;color:var(--accent);text-decoration:none;border:1.5px solid var(--accent);padding:6px 12px;border-radius:4px}
+.issue a:hover{background:var(--accent);color:#fff}
+.note{font-size:14px;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px;margin-top:32px}
+p{margin:0 0 10px}
+.issue small{color:var(--muted);font-size:14px}
+.inside{margin:-4px 0 18px;padding:0 0 0 20px;font-size:15px;color:var(--muted)}
+.inside li{margin:2px 0}
+dl.phones{margin:0;display:grid;grid-template-columns:1fr auto;gap:0 16px;font-size:16px}
+dl.phones dt,dl.phones dd{margin:0;padding:7px 0;border-bottom:1px solid var(--rule)}
+dl.phones dd{text-align:right;white-space:nowrap}
+dl.phones dt small{display:block;color:var(--muted);font-size:13px}
+dl.phones dt small a[href^="tel:"]{font-size:14px}
+a{color:var(--accent)}
+a[href^="tel:"]{font:700 17px "Roboto Condensed",sans-serif;text-decoration:none}
+.contact{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 12px}
+.contact a{font:700 16px "Roboto Condensed",sans-serif;text-decoration:none;color:#fff;background:var(--accent);padding:9px 14px;border-radius:4px}
+:root[data-theme="dark"] .contact a{color:#161616}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact a{color:#161616}}
+.small{font-size:14px;color:var(--muted)}
+
+nav{display:flex;align-items:center;gap:4px 18px;flex-wrap:wrap;margin:0 0 6px;font:700 15px "Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.5px}
+nav a{color:var(--ink);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{color:var(--accent);border-bottom-color:var(--accent)}
+nav .fb{margin-left:auto;display:inline-flex;align-items:center;gap:6px;border:none}
+.fbicon{width:20px;height:20px;flex:none;vertical-align:-4px}
+.contact a .fbicon{width:18px;height:18px;margin-right:6px}
+.contact a{display:inline-flex;align-items:center}
