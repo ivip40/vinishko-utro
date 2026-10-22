@@ -2,7 +2,7 @@
 
 Public GitHub Pages site: https://ivip40.github.io/vinishko-utro/
 
-Contents: `index.html` (issue list, contacts, legal owner line), `logo.svg`, `issues/YYYY-MM-broi-NN.pdf`.
+Contents: `index.html` (issue list with what is inside, useful phones from the latest issue, contacts: e-mail + Facebook, advertising), `logo.svg`, `issues/YYYY-MM-broi-NN.pdf`.
 
 Do not edit here by hand except the texts in `index.html`. New issues are published from the private working repo `ivip40/vinitsa-vestnik` with:
 

@@ -23,6 +23,22 @@ h2{font:700 20px "Roboto Condensed",sans-serif;text-transform:uppercase;letter-s
 .issue a:hover{background:var(--accent);color:#fff}
 .note{font-size:14px;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px;margin-top:32px}
 p{margin:0 0 10px}
+.issue small{color:var(--muted);font-size:14px}
+.inside{margin:-4px 0 18px;padding:0 0 0 20px;font-size:15px;color:var(--muted)}
+.inside li{margin:2px 0}
+dl.phones{margin:0;display:grid;grid-template-columns:1fr auto;gap:0 16px;font-size:16px}
+dl.phones dt,dl.phones dd{margin:0;padding:7px 0;border-bottom:1px solid var(--rule)}
+dl.phones dd{text-align:right;white-space:nowrap}
+dl.phones dt small{display:block;color:var(--muted);font-size:13px}
+dl.phones dt small a[href^="tel:"]{font-size:14px}
+a{color:var(--accent)}
+a[href^="tel:"]{font:700 17px "Roboto Condensed",sans-serif;text-decoration:none}
+.contact{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 12px}
+.contact a{font:700 16px "Roboto Condensed",sans-serif;text-decoration:none;color:#fff;background:var(--accent);padding:9px 14px;border-radius:4px}
+:root[data-theme="dark"] .contact a{color:#161616}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact a{color:#161616}}
+.small{font-size:14px;color:var(--muted)}
+
 </style>
 </head>
 <body>
@@ -34,12 +50,38 @@ p{margin:0 0 10px}
 
 <h2>Броеве</h2>
 <div class="issue"><div><b>Брой 1 · Ноември 2026</b><br><small>Пилотен брой — чернова</small></div><a href="issues/2026-11-broi-01.pdf">PDF ↓</a></div>
+<ul class="inside">
+<li>Виница събира подписи за собствен район</li>
+<li>Седемте улици и площадката: пълният списък на ремонтите</li>
+<li>„Света Параскева“: 1,8 млн. евро за основен ремонт — със заем</li>
+<li>Училището, което е по-старо от квартала · Как Кестрич стана Виница</li>
+<li>Автобусите до града, полезни телефони, календар за ноември–декември</li>
+</ul>
 
-<h2>Сигнали, обяви, реклама</h2>
-<p>Изпратете сигнал, безплатна обява (до 150 знака) или запитване за реклама: <b>[имейл]</b> · <b>[телефон/Viber]</b> · <a href="https://facebook.com/vinishkoutro">facebook.com/vinishkoutro</a></p>
-<p>Вестникът се разпространява безплатно в магазини, аптеки, кафенета, читалището и училището във Виница.</p>
+<h2>Полезни телефони</h2>
+<dl class="phones">
+<dt>Спешни случаи</dt><dd><a href="tel:112">112</a></dd>
+<dt>Община Варна — сигнали<small>signal.varna.bg</small></dt><dd><a href="tel:052820800">052/820 800</a></dd>
+<dt>Район „Приморски“<small>бул. „Ген. Колев“ 92; кмет Николай Желязков, приемен ден сряда, 10–12 ч.</small></dt><dd><a href="tel:052359100">052/359 100</a></dd>
+<dt>Общински офис Виница (АТО)<small>ул. „Цар Борис III“ 35Б</small></dt><dd><a href="tel:052341971">052/341 971</a></dd>
+<dt>ВиК-Варна — аварии (24 ч.)</dt><dd><a href="tel:080019160">0800 19160</a></dd>
+<dt>Енерго-Про — без ток (24 ч.)</dt><dd><a href="tel:070016161">0700 161 61</a></dd>
+<dt>Градски транспорт<small>автобусите на живо: varnatraffic.com</small></dt><dd><a href="tel:070010933">0700 10933</a></dd>
+<dt>Пето РУ — полиция<small>приемни във Виница 15:30–17:00: запад <a href="tel:052553554">052/553 554</a> (вт, чт), изток <a href="tel:052553567">052/553 567</a> (ср, пт)</small></dt><dd><a href="tel:052355311">052/355 311</a></dd>
+<dt>ОУ „Панайот Волов“</dt><dd><a href="tel:052469989">052/469 989</a></dd>
+<dt>ДГ №23 „Иглика“</dt><dd><a href="tel:052342301">052/342 301</a></dd>
+<dt>Поща 9022<small>ул. „Черно море“ 1 · пон–пет 8:00–16:00</small></dt><dd><a href="tel:052343088">052/343 088</a></dd>
+</dl>
+<p class="small">Телефоните са от брой 1 (ноември 2026). Ако някой е сменен, пишете ни.</p>
 
-<p class="note">Издател: [Име ЕООД], ЕИК [………], Варна. Действителен собственик: [Име Фамилия]. Отговорен редактор: [Име]. Рекламите са означени като „Реклама“ или „Платена публикация“. Лични данни обработваме само за журналистически цели; въпроси — на [имейл].</p>
+<h2>Пишете ни</h2>
+<p>Сигнали, безплатни малки обяви (до 150 знака), събития за календара, стари снимки на Виница — до 20-о число на месеца:</p>
+<div class="contact"><a href="mailto:vinishkoutro@gmail.com">vinishkoutro@gmail.com</a><a href="https://www.facebook.com/vinishkoutro">Facebook: Винишко Утро</a></div>
+
+<h2>Реклама във вестника</h2>
+<p>2 000 броя всеки месец в 20 точки в квартала — магазини, аптеки, кафенета, читалището и училището. Цени от €10 (ред в указателя „Майстори и услуги“) до €140 (половин страница). Пишете ни на <a href="mailto:vinishkoutro@gmail.com">vinishkoutro@gmail.com</a>.</p>
+
+<p class="note">Рекламите във вестника са означени като „Реклама“ или „Платена публикация“. Лични данни обработваме само за журналистически цели; въпроси — на <a href="mailto:vinishkoutro@gmail.com">vinishkoutro@gmail.com</a>.</p>
 </main>
 </body>
 </html>
