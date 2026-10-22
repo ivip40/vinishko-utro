@@ -3,14 +3,9 @@
 :root[data-theme="dark"]{--ink:#eee;--accent:#e08a97;--muted:#aaa;--paper:#161616;--tint:#222;--rule:#333}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.5 "PT Serif",Georgia,serif}
 main{max-width:720px;margin:0 auto;padding:32px 16px 48px}
-/* cover band — same drawing as the Facebook cover (assets/facebook/cover.html), title as real text */
-.hero{--hero:#fbf8f3;position:relative;background:var(--hero);text-align:center;padding:30px 12px 0;margin:0 0 14px;border-radius:6px;overflow:hidden}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero{--hero:#231e1f}}
-:root[data-theme="dark"] .hero{--hero:#231e1f}
-.hero h1{font:900 clamp(38px,9vw,64px)/1 "Playfair Display",serif;color:var(--accent);margin:0;letter-spacing:-.5px}
-.hero .tag{font:700 clamp(11px,2.6vw,14px) "Roboto Condensed",sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--ink);margin:10px 0 0}
-.hero .sun{position:absolute;right:7%;top:18px;width:clamp(26px,7vw,52px);height:clamp(26px,7vw,52px);border-radius:50%;background:#d9a441}
-.hero .land{display:block;width:100%;height:clamp(54px,12vw,86px);margin-top:14px}
+header{display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--accent);padding-bottom:12px;margin-bottom:8px}
+header img{width:44px;height:44px}
+h1{font:900 34px/1 "Playfair Display",serif;color:var(--accent);margin:0}
 .sub{font:14px "Roboto Condensed",sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 28px}
 h2{font:700 20px "Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.5px;margin:28px 0 10px}
 .issue{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--tint);padding:14px 16px;border-left:4px solid var(--accent);margin-bottom:10px;flex-wrap:wrap}
@@ -35,7 +30,7 @@ a[href^="tel:"]{font:700 17px "Roboto Condensed",sans-serif;text-decoration:none
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact a{color:#161616}}
 .small{font-size:14px;color:var(--muted)}
 
-nav{display:flex;align-items:center;gap:4px 18px;flex-wrap:wrap;margin:0 0 20px;padding-bottom:6px;border-bottom:1px solid var(--rule);font:700 15px "Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.5px}
+nav{display:flex;align-items:center;gap:4px 18px;flex-wrap:wrap;margin:0 0 6px;font:700 15px "Roboto Condensed",sans-serif;text-transform:uppercase;letter-spacing:.5px}
 nav a{color:var(--ink);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
 nav a:hover,nav a[aria-current]{color:var(--accent);border-bottom-color:var(--accent)}
 nav .fb{margin-left:auto;display:inline-flex;align-items:center;gap:6px;border:none}
@@ -60,4 +55,3 @@ nav .fb{margin-left:auto;display:inline-flex;align-items:center;gap:6px;border:n
 .pv-msg{color:#ddd;text-align:center;margin-top:30vh;font:17px "Roboto Condensed",sans-serif}
 .pv-msg a{color:#f0b8c0}
 @media (max-width:560px){.pv-title{display:none}.pv-info{flex:1}.pv-tools a span{display:none}}
-@media (max-width:520px){.hero{padding-top:34px}.hero .sun{top:8px;right:10px;width:22px;height:22px}.hero .tag{letter-spacing:.6px;font-size:11px}}
